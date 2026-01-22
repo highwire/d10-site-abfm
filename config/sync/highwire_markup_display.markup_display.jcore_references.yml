@@ -1,0 +1,18 @@
+uuid: ad16fe3b-58e0-49ed-a9ee-40d4083df8ae
+langcode: en
+status: true
+dependencies: {  }
+id: jcore_references
+label: 'Jcore References'
+configurations:
+  -
+    markup_profile: jcore_references
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_article
+log: false
+render_placeholder: false

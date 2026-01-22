@@ -1,0 +1,29 @@
+uuid: c84ab5c5-daf8-4ce5-bc0d-1911dcd53b6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.year
+  module:
+    - facets
+    - system
+  theme:
+    - jcorex_one
+id: jcorex_one_year
+theme: jcorex_one
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'facet_block:year'
+settings:
+  id: 'facet_block:year'
+  label: 'Publication date'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: jcorex_one_year
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search

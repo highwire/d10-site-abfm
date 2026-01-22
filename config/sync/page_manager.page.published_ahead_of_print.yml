@@ -1,0 +1,12 @@
+uuid: ffee371f-0c78-477e-a79b-d5932aaf4230
+langcode: en
+status: true
+dependencies: {  }
+id: published_ahead_of_print
+label: 'Published Ahead of Print'
+description: ''
+use_admin_theme: false
+path: /content/early/recent
+access_logic: and
+access_conditions: {  }
+parameters: {  }

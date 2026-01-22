@@ -1,0 +1,11 @@
+uuid: ebab9a7d-2e97-4071-ba36-0f3bc924dd30
+langcode: en
+status: true
+dependencies: {  }
+name: adjunct
+type: adjunct
+description: 'Auto generated HighWire content type for adjunct'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

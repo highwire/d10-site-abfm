@@ -1,0 +1,76 @@
+uuid: dd93010a-883a-4b5d-9ba9-a13c22fa6177
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.folders_id
+  module:
+    - highwire_personalization
+    - panels
+id: folders_id-panels_variant-0
+label: Panels
+weight: 0
+variant: panels_variant
+variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: b05c9a6e-8ed7-4362-a88d-a6f32b9499b8
+  blocks:
+    e44d45da-1239-44cb-9eea-533bb8fa3aa7:
+      id: create_folder_block
+      label: 'Create Folder Block'
+      label_display: '0'
+      provider: highwire_personalization
+      context_mapping: {  }
+      region: left
+      weight: 2
+      uuid: e44d45da-1239-44cb-9eea-533bb8fa3aa7
+    b00f5065-9f76-48ab-8798-a90d6ef2bd90:
+      id: folder_listing_block
+      label: 'Listing Folder Block'
+      label_display: '0'
+      provider: highwire_personalization
+      context_mapping: {  }
+      region: left
+      weight: 1
+      uuid: b00f5065-9f76-48ab-8798-a90d6ef2bd90
+    fe3534b2-d4d5-4971-838f-493407569715:
+      id: bookmark_listing
+      label: 'Bookmarked Listing'
+      label_display: '0'
+      provider: highwire_personalization
+      context_mapping: {  }
+      region: left
+      weight: 0
+      uuid: fe3534b2-d4d5-4971-838f-493407569715
+  page_title: Folder
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+  builder: standard
+  storage_type: page_manager
+  storage_id: folders_id-panels_variant-0
+page: folders_id
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

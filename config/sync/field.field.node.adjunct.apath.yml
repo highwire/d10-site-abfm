@@ -1,0 +1,19 @@
+uuid: ea724fab-ddfc-444e-a04a-208cc0fe49a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.apath
+    - node.type.adjunct
+id: node.adjunct.apath
+field_name: apath
+entity_type: node
+bundle: adjunct
+label: Apath
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

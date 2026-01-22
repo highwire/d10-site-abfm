@@ -1,0 +1,22 @@
+uuid: 7a24ae85-2bda-4a88-a223-d5fa60585ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.adjunct_related_data
+    - node.type.journal_article
+  module:
+    - text
+id: node.journal_article.adjunct_related_data
+field_name: adjunct_related_data
+entity_type: node
+bundle: journal_article
+label: adjunct-related-data
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

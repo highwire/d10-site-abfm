@@ -1,0 +1,22 @@
+uuid: 7675b432-8d7e-477e-a775-6d21c787c0d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subtitle
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.subtitle
+field_name: subtitle
+entity_type: node
+bundle: adjunct
+label: subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

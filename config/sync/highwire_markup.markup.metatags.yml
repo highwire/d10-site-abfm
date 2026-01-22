@@ -1,0 +1,10 @@
+uuid: 50dd27d9-5aac-4946-b8c6-0cfe1c1f62bd
+langcode: en
+status: true
+dependencies: {  }
+id: metatags
+label: Metatags
+profile_id: metatags
+configuration: {  }
+dw_logging: null
+exists_field: ''

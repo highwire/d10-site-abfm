@@ -1,0 +1,22 @@
+uuid: 73f7f383-b971-495e-a0e2-0b38805f268c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.ec_role
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.ec_role
+field_name: ec_role
+entity_type: node
+bundle: adjunct
+label: ec-role
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

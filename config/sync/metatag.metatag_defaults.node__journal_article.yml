@@ -1,0 +1,8 @@
+uuid: 149f1ccf-95b5-4327-ba27-74fba8e3cfd0
+langcode: en
+status: true
+dependencies: {  }
+id: node__journal_article
+label: 'Content: journal_article'
+tags:
+  title: '[node:title] | [site:name]'

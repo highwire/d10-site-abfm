@@ -1,0 +1,19 @@
+uuid: 0e011aac-e4a1-40f9-9bba-c7c40717a114
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.adjunct_related_data
+field_name: adjunct_related_data
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

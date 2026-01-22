@@ -1,0 +1,22 @@
+uuid: abe60aa4-f18d-45a8-a2f5-211a797ef368
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_metatag
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  highwire_metatag:
+    metatags_profile: metatags
+    metatags_view_mode: content_details
+name: journal_article
+type: journal_article
+description: 'Auto generated HighWire content type for journal-article'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

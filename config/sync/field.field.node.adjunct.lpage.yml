@@ -1,0 +1,22 @@
+uuid: 4a85aa4b-6284-444b-8bfb-5da75c3faaaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.lpage
+field_name: lpage
+entity_type: node
+bundle: adjunct
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

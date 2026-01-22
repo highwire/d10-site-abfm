@@ -1,0 +1,24 @@
+uuid: 47bbdd0c-8efc-4572-b9a4-a6f8c7a7aa3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_article_tab_references
+    - node.type.journal_article
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: article_tab_references
+id: node.journal_article.hwmd_article_tab_references
+field_name: hwmd_article_tab_references
+entity_type: node
+bundle: journal_article
+label: 'HighWire Markup Display - Article Tab References'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

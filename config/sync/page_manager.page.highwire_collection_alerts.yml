@@ -1,0 +1,12 @@
+uuid: 4062f837-f580-4a54-b93b-2e5722741299
+langcode: en
+status: true
+dependencies: {  }
+id: highwire_collection_alerts
+label: 'Highwire Collection Alerts'
+description: 'Highwire Collection Alerts Edit'
+use_admin_theme: false
+path: /alerts/collection/add
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,52 @@
+uuid: a2072d47-780a-46e9-a66b-020fb556045a
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.saved_search
+  module:
+    - jnl_search
+    - panels
+id: saved_search-panels_variant-0
+label: Panels
+weight: 0
+variant: panels_variant
+variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: 20ac7f7f-1564-4337-9a7c-bb43687d2d40
+  blocks:
+    107ac862-3689-48a2-94c9-4d953bb5e723:
+      id: saved_search_block
+      label: 'Saved Search Block'
+      label_display: '0'
+      provider: jnl_search
+      context_mapping: {  }
+      region: main
+      weight: 0
+      uuid: 107ac862-3689-48a2-94c9-4d953bb5e723
+  page_title: 'My saved searches'
+  layout: bs_1col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  builder: standard
+  storage_type: page_manager
+  storage_id: saved_search-panels_variant-0
+page: saved_search
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

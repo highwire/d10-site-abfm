@@ -1,0 +1,22 @@
+uuid: 5f8a74ef-396f-490a-b792-e5f3b9b58b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.publisher_id
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.publisher_id
+field_name: publisher_id
+entity_type: node
+bundle: adjunct
+label: publisher-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

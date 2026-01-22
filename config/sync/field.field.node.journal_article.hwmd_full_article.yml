@@ -1,0 +1,24 @@
+uuid: 5ab18605-0c23-4532-9826-6d6884416d1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_full_article
+    - node.type.journal_article
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: full_article
+id: node.journal_article.hwmd_full_article
+field_name: hwmd_full_article
+entity_type: node
+bundle: journal_article
+label: 'HighWire Markup Display - Full Article'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

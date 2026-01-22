@@ -1,0 +1,21 @@
+uuid: 4b23c14d-52c8-40b0-a620-70447c956c4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.next_atom
+    - node.type.adjunct
+id: node.adjunct.next_atom
+field_name: next_atom
+entity_type: node
+bundle: adjunct
+label: next-atom
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 1b7339d7-1080-4889-82e9-9247871b169f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.journal_eissn_compact
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.journal_eissn_compact
+field_name: journal_eissn_compact
+entity_type: node
+bundle: adjunct
+label: journal-eissn-compact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

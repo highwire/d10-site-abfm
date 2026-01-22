@@ -1,0 +1,23 @@
+uuid: 823dcf8c-5c14-40c8-889c-40e7c7a237ce
+langcode: en
+status: true
+dependencies: {  }
+id: G-25DBS7QDGL.68948f1ca3b712.37864033
+label: G-25DBS7QDGL
+weight: 0
+tag_container_ids:
+  - G-25DBS7QDGL
+advanced_settings: {  }
+dimensions_metrics: {  }
+conditions: {  }
+events:
+  custom: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  login:
+    method: CMS
+  search: {  }
+  sign_up:
+    method: CMS
+  webform_purchase: {  }
