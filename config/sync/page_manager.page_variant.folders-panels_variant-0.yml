@@ -1,0 +1,67 @@
+uuid: 0ea7d3fd-7d7a-4f8a-b517-2b5fbe28bac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.folders
+  module:
+    - highwire_personalization
+    - panels
+id: folders-panels_variant-0
+label: Panels
+weight: 0
+variant: panels_variant
+variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: da60dd3a-9473-4fcb-b63d-11d0718dfb63
+  blocks:
+    751079d0-06cf-4524-8592-ec8b11987e4c:
+      id: create_folder_block
+      label: 'Create Folder Block'
+      label_display: '0'
+      provider: highwire_personalization
+      context_mapping: {  }
+      region: right
+      weight: 0
+      uuid: 751079d0-06cf-4524-8592-ec8b11987e4c
+    ccd9026f-df38-40f3-954c-9e102ab4d5a8:
+      id: folder_listing_block
+      label: 'Listing Folder Block'
+      label_display: '0'
+      provider: highwire_personalization
+      context_mapping: {  }
+      region: left
+      weight: 0
+      uuid: ccd9026f-df38-40f3-954c-9e102ab4d5a8
+  page_title: Folders
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+  builder: standard
+  storage_type: page_manager
+  storage_id: folders-panels_variant-0
+page: folders
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

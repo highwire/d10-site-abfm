@@ -1,0 +1,96 @@
+_core:
+  default_config_hash: 7vp7nHCuh4KA6y5AJc9hQGNbxeA5BlnpRykhj3xZojo
+default_view: LastSixMonths
+date_filters:
+  ArticleLifetime: ArticleLifetime
+  LastSixMonths: LastSixMonths
+  ThisMonth: ThisMonth
+  ViewRange: ViewRange
+display_settings: '0'
+metric_types:
+  abstract: abstract
+  full: full
+  pdf: pdf
+  source: source
+  total: 0
+override_title: 'Usage statistics'
+altmetric_statistics_tag: '<div data-badge-details="right" data-badge-type="medium-donut" [PUBCODE] data-hide-no-mentions="true" class="altmetric-embed"></div>'
+altmetric_override_title: 'Statistics from Altmetric.com'
+empty_text: 'No statistics are available.'
+default_source_name: Highwire
+display_grand_total: 1
+email_article_display: 1
+thanks_msg: '<p>Thank you for your interest in spreading the word on NAVIGATION: Journal of the Institute of Navigation.</p>'
+email_article_note: '<p>NOTE: We only request your email address so that the person you are recommending the page to knows that you wanted them to see it, and that it is not junk mail. We do not capture any email address.</p>'
+message_subject: '(Your Name) has sent you a message from NAVIGATION: Journal of the Institute of Navigation'
+message_body: '(Your Name) thought you would like to see the NAVIGATION: Journal of the Institute of Navigation web site.'
+thanks_msg_display: 1
+email_article_note_display: 1
+message_subject_display: 1
+message_body_display: 1
+default_x_axis_label: Date/Type
+default_y_axis_label: Views
+first_color_field: '#fef1b3'
+second_color_field: '#abdda4'
+third_color_field: '#ffa500'
+Fourth_color_field: '#f45140'
+fifth_color_field: '#2b83ba'
+article_config_checkbox: 1
+article_google_scholar_checkbox: 1
+article_pubmed_checkbox: 1
+article_advanced_search_checkbox: 1
+article_author_landing_checkbox: 0
+article_orchid_checkbox: 1
+article_ads_search_checkbox: 0
+article_agricola_checkbox: 0
+article_correspondence_checkbox: 1
+article_advanced_search_textfield: ''
+default_config_checkbox: 1
+default_openaccess_icon_textfield: hw-icon-open-access
+default_openaccess_title_textfield: 'Open Access'
+default_user_access_icon_textfield: icon-ok-sign
+default_user_access_title_textfield: 'You have access'
+article_show_access_checkbox: 1
+default_restricted_access_icon_textfield: ''
+default_restricted_access_title_textfield: ''
+enable_toc_abstract_tooltip: 0
+enable_author_tooltip: 0
+article_version_heading: ''
+article_version_title: ''
+version_date_format: ''
+article_version_description: ''
+article_version_checkbox: 0
+author_article_google_scholar_checkbox: 1
+author_article_pubmed_checkbox: 0
+author_article_advanced_search_checkbox: 0
+author_article_author_landing_checkbox: 0
+author_article_orchid_checkbox: 0
+author_article_ads_search_checkbox: 0
+author_article_agricola_checkbox: 0
+author_article_correspondence_checkbox: 0
+default_readspeaker_checkbox: 0
+default_citation: 0
+enable_toc_subtitle: 0
+default_responses: ''
+isi_related: 0
+pubmed_related: 0
+scopus_related: 0
+google_related: 0
+info_published: 1
+info_pubmed: 1
+print_issn: 1
+success_msg: '<p>Thank you for your help in spreading the word about NAVIGATION: Journal of the Institute of Navigation. We appreciate your help.</p>'
+enable_recaptcha: 0
+history_label: ''
+date_select:
+  fpubdate: fpubdate
+  ppubdate: 0
+  epubdate: 0
+label_ppubdate: 'Published in print'
+label_epubdate: 'Published online'
+label_received: Received
+label_accepted: Accepted
+history_date_format: 'F j, Y'
+hide_empty_cited_by: 1
+label_combine: Published
+label_fpubdate: 'Published online'

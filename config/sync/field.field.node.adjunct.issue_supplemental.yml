@@ -1,0 +1,21 @@
+uuid: fd2390e8-f910-4a80-b0c2-6517b99e2c1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.issue_supplemental
+    - node.type.adjunct
+id: node.adjunct.issue_supplemental
+field_name: issue_supplemental
+entity_type: node
+bundle: adjunct
+label: issue-supplemental
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

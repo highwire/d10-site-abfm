@@ -1,0 +1,21 @@
+uuid: 6e71c089-b596-4280-8dec-8891cb06d6c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.adjuncts
+    - node.type.adjunct
+id: node.adjunct.adjuncts
+field_name: adjuncts
+entity_type: node
+bundle: adjunct
+label: adjuncts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

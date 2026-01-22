@@ -1,0 +1,22 @@
+uuid: a1615d89-550e-462f-8ba1-0d2c6eee6ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.slug
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.slug
+field_name: slug
+entity_type: node
+bundle: adjunct
+label: slug
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

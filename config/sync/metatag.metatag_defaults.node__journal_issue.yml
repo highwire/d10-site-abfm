@@ -1,0 +1,8 @@
+uuid: 8ad17d48-5f99-4c39-9413-105995e7cd6f
+langcode: en
+status: true
+dependencies: {  }
+id: node__journal_issue
+label: 'Content: journal_issue'
+tags:
+  title: 'Table of Contents – [node:date_ppub:start_date:custom:M d, Y], Vol. [node:volume] ([node:issue]) | [site:name]'

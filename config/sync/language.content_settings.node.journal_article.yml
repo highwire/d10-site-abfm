@@ -1,0 +1,11 @@
+uuid: b30e1839-044b-452a-9618-93edfc576577
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.journal_article
+id: node.journal_article
+target_entity_type_id: node
+target_bundle: journal_article
+default_langcode: site_default
+language_alterable: false

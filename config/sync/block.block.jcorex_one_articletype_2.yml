@@ -1,0 +1,29 @@
+uuid: 23334e4b-8a46-4f0b-babf-ab2cd5a20201
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.article_type_section
+  module:
+    - facets
+    - system
+  theme:
+    - jcorex_one
+id: jcorex_one_articletype_2
+theme: jcorex_one
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'facet_block:article_type_section'
+settings:
+  id: 'facet_block:article_type_section'
+  label: 'Refine Search'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: jcorex_one_articletype_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search

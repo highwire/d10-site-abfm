@@ -1,0 +1,21 @@
+uuid: d90a8285-80a7-4bfa-a0bc-33872b428c5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_received
+    - node.type.adjunct
+  module:
+    - datetime_range
+id: node.adjunct.date_received
+field_name: date_received
+entity_type: node
+bundle: adjunct
+label: date-received
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

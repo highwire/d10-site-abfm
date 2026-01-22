@@ -1,0 +1,22 @@
+uuid: 83e4e2ff-32af-4159-b107-ec9b50e08722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contributors
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.contributors
+field_name: contributors
+entity_type: node
+bundle: adjunct
+label: contributors
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

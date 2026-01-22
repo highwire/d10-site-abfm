@@ -1,0 +1,58 @@
+uuid: eaf35ff5-0561-4d06-86db-f51ff8484598
+langcode: en
+status: true
+dependencies: {  }
+id: jcore_fulltext
+label: 'Jcore Fulltext'
+profile_id: jcore-fulltext
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: sassuri
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: graphicfigures
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: mathml
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: openurl
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: delete
+      processor_config:
+        config:
+          xpath: "//div/h1[contains(@id, \"article-title-1\")]\r\n//div/h2[contains(@id, \"subtitle\")]\r\n//div/h2[contains(@class, \"subtitle\")]\r\n//div/div[contains(@class, \"contributors\")]\r\n//div/div[contains(@class, \"ref-list\")]"
+          selector: ''
+          preserve_children: 0
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: articletableslinks
+      processor_config:
+        config:
+          tab: article
+          view_popup: 0
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: articlefigureslinks
+      processor_config:
+        config:
+          size: variant_medium_image
+          download_figure: '1'
+          open_tab: '1'
+          download_powerpoint: '1'
+          tab: article
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: keywordurl
+    weight: '1'
+dw_logging: null
+exists_field: ''

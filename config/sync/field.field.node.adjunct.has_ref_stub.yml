@@ -1,0 +1,21 @@
+uuid: fb3b7682-8076-4cee-89a5-93062cbfff53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_ref_stub
+    - node.type.adjunct
+id: node.adjunct.has_ref_stub
+field_name: has_ref_stub
+entity_type: node
+bundle: adjunct
+label: has-ref-stub
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

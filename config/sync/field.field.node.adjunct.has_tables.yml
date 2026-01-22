@@ -1,0 +1,21 @@
+uuid: 2ce3c232-614d-489b-b10f-e1187aa2a2de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.has_tables
+    - node.type.adjunct
+id: node.adjunct.has_tables
+field_name: has_tables
+entity_type: node
+bundle: adjunct
+label: has-tables
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

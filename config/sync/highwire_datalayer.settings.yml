@@ -1,0 +1,11 @@
+highwire_datalayer_settings_plugins:
+  content:
+    item_bits_data: 0
+    jcorex_content_data: 1
+    scolaris_jounal_data: 0
+    search_data: 1
+    taxonomy_data: 1
+  page:
+    page_data: 1
+  user:
+    user_data: 1

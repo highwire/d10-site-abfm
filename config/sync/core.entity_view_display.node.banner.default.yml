@@ -1,0 +1,76 @@
+uuid: 636c68c1-4763-4d7c-90b9-299da8c98d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.banner.field_banner_caption
+    - field.field.node.banner.field_banner_heading
+    - field.field.node.banner.field_banner_image
+    - field.field.node.banner.field_banner_link
+    - field.field.node.banner.field_banner_paragraph
+    - node.type.banner
+  module:
+    - image
+    - link
+    - user
+_core:
+  default_config_hash: k7sEVFcvyDUB78FvXCppw5lwG4Zth3B1m-yEhDbVdPs
+id: node.banner.default
+targetEntityType: node
+bundle: banner
+mode: default
+content:
+  field_banner_caption:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_banner_heading:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_banner_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_banner_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_banner_paragraph:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  jnl_focus_view: true
+  langcode: true
+  prev_next_pager: true
+  prevnext_toc_pager: true
+  search_api_excerpt: true

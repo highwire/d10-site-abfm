@@ -1,0 +1,82 @@
+uuid: 8ff77717-e48e-43e0-b145-c18050d1ee54
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.highwire_collection_alerts
+  module:
+    - highwire_alerts
+    - panels
+id: highwire_collection_alerts-panels_variant-0
+label: Panels
+weight: 0
+variant: panels_variant
+variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: 7741bb16-4a90-4fae-9ecf-ed2f300b68de
+  blocks:
+    57d820f7-2768-40ce-aaf4-037d56977af3:
+      id: Highwire_collection_alert
+      label: 'Manage Collection Alert'
+      label_display: '0'
+      provider: highwire_alerts
+      context_mapping: {  }
+      region: left
+      weight: 0
+      uuid: 57d820f7-2768-40ce-aaf4-037d56977af3
+      checkbox_heading: ''
+      site_code: ''
+      display_name: 'Collection Alert'
+    67a523a3-53cf-48f7-8327-d335400b1310:
+      id: page_title_block
+      label: 'Page title'
+      label_display: '0'
+      provider: core
+      context_mapping: {  }
+      region: top
+      weight: 0
+      uuid: 67a523a3-53cf-48f7-8327-d335400b1310
+  page_title: 'Manage Collection Alert '
+  layout: bs_2col_stacked
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 0
+      attributes: ''
+    regions:
+      top:
+        wrapper: div
+        classes:
+          row: row
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-12'
+      left:
+        wrapper: div
+        classes:
+          row: row
+        add_region_classes: 0
+        attributes: 'class|col-12 col-medium-tablet-7 col-large-tablet-8 layout__region--first'
+      right:
+        wrapper: div
+        classes:
+          row: row
+        add_region_classes: 0
+        attributes: 'class|col-12 col-medium-tablet-5 col-large-tablet-4 layout__region--second'
+      bottom:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  builder: standard
+  storage_type: page_manager
+  storage_id: highwire_collection_alerts-panels_variant-0
+page: highwire_collection_alerts
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

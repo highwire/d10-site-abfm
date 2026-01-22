@@ -1,0 +1,22 @@
+uuid: 846c44ea-2468-467a-8a09-0a015adb3791
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.abstract_type
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.abstract_type
+field_name: abstract_type
+entity_type: node
+bundle: adjunct
+label: abstract-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

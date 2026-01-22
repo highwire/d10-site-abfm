@@ -1,0 +1,22 @@
+uuid: 173e9a2e-6e9d-4ef8-af80-261cf4b06a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.volume
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.volume
+field_name: volume
+entity_type: node
+bundle: adjunct
+label: volume
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

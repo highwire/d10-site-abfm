@@ -1,0 +1,27 @@
+uuid: 32f2b636-26a3-4d2d-ad7b-1c00548c76a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pdf_extract_img
+    - node.type.adjunct
+  module:
+    - file
+id: node.adjunct.pdf_extract_img
+field_name: pdf_extract_img
+entity_type: node
+bundle: adjunct
+label: pdf-extract-img
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

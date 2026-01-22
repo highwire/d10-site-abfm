@@ -1,0 +1,20 @@
+uuid: 156b4770-241c-4638-a2cf-97bf57c588a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - jnl_basic_config
+  theme:
+    - jcorex_one
+id: jcorex_one_footerpoweredbylogo
+theme: jcorex_one
+region: footer_bottom
+weight: -10
+provider: null
+plugin: Footer_powered_by_logo
+settings:
+  id: Footer_powered_by_logo
+  label: 'Footer Powered By Logo'
+  label_display: '0'
+  provider: jnl_basic_config
+visibility: {  }

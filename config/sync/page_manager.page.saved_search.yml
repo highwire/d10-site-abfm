@@ -1,0 +1,12 @@
+uuid: ac17fb41-b209-4f41-b359-df136ae83511
+langcode: en
+status: true
+dependencies: {  }
+id: saved_search
+label: 'Saved search'
+description: ''
+use_admin_theme: false
+path: /saved-search
+access_logic: and
+access_conditions: {  }
+parameters: {  }

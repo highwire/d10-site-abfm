@@ -1,0 +1,12 @@
+uuid: bf056ee8-b132-4f11-b4d2-5e92be200fb7
+langcode: en
+status: true
+dependencies: {  }
+id: folders_id
+label: 'folders Id'
+description: ''
+use_admin_theme: false
+path: '/folders/{id}'
+access_logic: and
+access_conditions: {  }
+parameters: {  }

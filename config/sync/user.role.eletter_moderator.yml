@@ -1,0 +1,11 @@
+uuid: c5c95110-0ea7-4be4-ad2b-02c4a6a4ee3c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uZWb6DfRzBBipnuEn8QUx1_JbEcioFdXxWZg8vU88SI
+id: eletter_moderator
+label: 'eletter moderator'
+weight: 3
+is_admin: null
+permissions: {  }

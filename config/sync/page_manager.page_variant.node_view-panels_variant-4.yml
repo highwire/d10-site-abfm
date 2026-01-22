@@ -1,0 +1,62 @@
+uuid: eedba750-b63b-416a-9ee1-e5ee4a0bc0e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - ctools
+    - node
+    - panels
+id: node_view-panels_variant-4
+label: 'Advance Page'
+weight: 0
+variant: panels_variant
+variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: eb9a8063-c1c7-42e0-853b-d357a706aca0
+  blocks:
+    05114ffd-33a1-40c1-b799-6f61c9841e06:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      label_display: '0'
+      provider: ctools
+      view_mode: default
+      context_mapping:
+        entity: node
+      region: main
+      weight: 1
+      uuid: 05114ffd-33a1-40c1-b799-6f61c9841e06
+  page_title: '[node:title] '
+  layout: bs_1col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  builder: standard
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-4
+page: node_view
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      advanced_page: advanced_page
+selection_logic: and
+static_context: {  }

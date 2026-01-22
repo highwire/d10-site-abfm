@@ -1,0 +1,14 @@
+uuid: be8b8cbc-2810-46b8-b63b-52d8fe6a8106
+langcode: en
+status: true
+dependencies: {  }
+id: jcore_fig_table
+label: 'Jcore Fig Table'
+profile_id: jcore-fig-tab
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: sassuri
+    weight: '1'
+dw_logging: null
+exists_field: has_figures_or_tables

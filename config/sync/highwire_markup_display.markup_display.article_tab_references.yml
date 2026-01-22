@@ -1,0 +1,18 @@
+uuid: 36eb1a4f-0c8e-487e-b0db-471017ba84e1
+langcode: en
+status: true
+dependencies: {  }
+id: article_tab_references
+label: 'Article Tab References'
+configurations:
+  -
+    markup_profile: jcore_references
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_article
+log: false
+render_placeholder: false

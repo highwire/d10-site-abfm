@@ -1,0 +1,18 @@
+uuid: 36288db1-7c13-4bbf-9f00-0d1e160de3cb
+langcode: en
+status: true
+dependencies: {  }
+id: full_article
+label: 'Full Article'
+configurations:
+  -
+    markup_profile: jcore_fulltext
+    access_rule: ''
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+markup_field_enabled: true
+markup_field_content_types:
+  - journal_article
+log: false
+render_placeholder: false

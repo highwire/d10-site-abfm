@@ -1,0 +1,239 @@
+uuid: 147d0efb-7cd8-4d40-8287-26712be666c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.jnl
+  module:
+    - search_api
+_core:
+  default_config_hash: JNDwGFYaDsAaGIMMGaK6YPkKlg9PrYjVGERPsoKa_LQ
+id: published_ahead_of_print
+label: 'Published Ahead of Print'
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_jnl
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Published Ahead of Print'
+      fields: {  }
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 15
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments: {  }
+      filters:
+        type:
+          id: type
+          table: search_api_index_jnl
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_options
+          operator: or
+          value:
+            journal_article: journal_article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        status:
+          id: status
+          table: search_api_index_jnl
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        early_release:
+          id: early_release
+          table: search_api_index_jnl
+          field: early_release
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: html_list
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: 'list-unstyled pap-articles'
+          class: ''
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              journal: default
+              journal_article: toc_list
+              journal_fragment: default
+              journal_info: default
+              journal_issue: default
+              journal_volume: default
+      query:
+        type: search_api_query
+        options:
+          bypass_access: false
+          skip_access: false
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.jnl'
+        - 'search_api_list:jnl'
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 1
+    display_options:
+      display_extenders:
+        simple_sitemap_display_extender: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.jnl'
+        - 'search_api_list:jnl'

@@ -1,0 +1,21 @@
+uuid: a48ac2c9-1e4c-4b7a-bf6f-bb23221a914e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent_issue
+    - node.type.adjunct
+id: node.adjunct.parent_issue
+field_name: parent_issue
+entity_type: node
+bundle: adjunct
+label: parent-issue
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

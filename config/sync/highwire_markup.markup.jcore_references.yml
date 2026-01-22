@@ -1,0 +1,25 @@
+uuid: e84e2ab5-6c35-4f3a-83fa-ba5b411d9443
+langcode: en
+status: true
+dependencies: {  }
+id: jcore_references
+label: 'Jcore References'
+profile_id: jcorex-references
+configuration:
+  -
+    markup_processors_settings:
+      markup_processors: prefix
+      processor_config:
+        config:
+          prefix: '<span id="ref-list-1"></span>'
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: RemoveReferenceLinkTarget
+    weight: '1'
+  -
+    markup_processors_settings:
+      markup_processors: ChangeGoogleScholarLink
+    weight: '1'
+dw_logging: null
+exists_field: has_ref_links

@@ -1,0 +1,22 @@
+uuid: 4ba8fa56-3baf-4298-b773-0284b18ec327
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cover_date
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.cover_date
+field_name: cover_date
+entity_type: node
+bundle: adjunct
+label: cover-date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

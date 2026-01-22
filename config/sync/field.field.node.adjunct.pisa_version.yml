@@ -1,0 +1,22 @@
+uuid: 28c03a6c-f186-4e49-a420-c632a94be9b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pisa_version
+    - node.type.adjunct
+  module:
+    - text
+id: node.adjunct.pisa_version
+field_name: pisa_version
+entity_type: node
+bundle: adjunct
+label: pisa-version
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
