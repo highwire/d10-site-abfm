@@ -31,7 +31,7 @@ palette:
   secondary_text: '#756d6f'
   link_icon: '#574143'
   menu_bar_border: '#deddd8'
-  header_bar_border: '#505160'
+  header_bar_border: '#f0efea'
   access_approved_icon: '#538f57'
   main_menu_active_link_border: '#deddd8'
   main_menu_active_link_bg: '#d72c16'
@@ -115,6 +115,6 @@ palette:
   carousel_region_headers: '#a10115'
   secondary_content: '#000000'
   headers: '#121212'
-logo: 'public://color/jcorex_one-13d76a7b/logo.svg'
+logo: 'public://color/jcorex_one-13303efc/logo.svg'
 stylesheets: {  }
 files: {  }
