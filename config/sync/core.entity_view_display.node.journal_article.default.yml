@@ -162,6 +162,7 @@ hidden:
   atom_type: true
   authors_full_name: true
   authors_only_full_name: true
+  bluesky_share_tools: true
   bookmark: true
   bookvault_skuid: true
   ccc_permissions_link: true
@@ -242,8 +243,13 @@ hidden:
   issue_toc: true
   jnl_altmetrics: true
   jnl_focus_view: true
+  jnl_funding: true
   jnl_info_metrics_tab: true
+  jnl_info_metrics_tab_contribs: true
+  jnl_reviewer_comments_pdf: true
   jnl_usage_stats: true
+  jnl_view_full_article: true
+  jnl_view_full_resumo: true
   journal_abbrv_title: true
   journal_current_issue: true
   journal_eissn: true
@@ -258,6 +264,7 @@ hidden:
   keywords_data: true
   langcode: true
   license_info: true
+  linkedin_share_second_tools: true
   linkedin_share_tools: true
   lpage: true
   member_network: true
@@ -306,4 +313,7 @@ hidden:
   variant_table_of_contents_pdf: true
   version_current: true
   video_id: true
+  view_article_abstract: true
+  view_article_link: true
   volume: true
+  warning_viewpoint: true

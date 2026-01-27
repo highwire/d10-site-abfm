@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - page_manager.page.homepage
+    - views.view.homepage_featured_articles
     - views.view.latest_articles
   content:
-    - 'block_content:basic:76e6b1a8-a3ef-4abf-bd86-a36aeb415946'
     - 'block_content:basic:962ed298-cdcf-4b4c-8cca-42d60354d84d'
     - 'block_content:basic:ef6c6c40-29ec-42a9-8cc9-7b66287d3a10'
+    - 'block_content:basic:f5b79222-d035-469a-bfad-46e14ed9d825'
+    - 'block_content:basic:f85053f5-da71-492d-bcf7-1a5c51006101'
   module:
     - block_content
     - highwire_top_topics
@@ -34,14 +36,14 @@ variant_settings:
       label_display: '0'
       provider: highwire_top_topics
       context_mapping: {  }
-      region: top_right
-      weight: -1
+      region: bottom_right
+      weight: -4
       uuid: c59d1620-00b1-4c9d-a443-5cac8c085148
       top_topics: 1
       top_topics_title: ''
       most_read: 1
       most_read_title: ''
-      most_cited: 0
+      most_cited: 1
       most_cited_title: ''
       eletter_articles: 0
       eletter_articles_title: ''
@@ -49,22 +51,25 @@ variant_settings:
       corpus: navi
       read_more: 1
       top_topics_order: '1'
-      most_read_order: '2'
-      most_cited_order: '3'
+      most_read_order: '3'
+      most_cited_order: '2'
       eletter_articles_order: '4'
-      most_cited_more: ''
+      most_cited_more: More...
       top_topics_more: ''
-      most_read_more: ''
+      most_read_more: More...
       eletter_articles_more: ''
-    66c133eb-8897-413a-a49f-56197d807a9f:
-      id: jnl_current_issue
-      label: 'Current Issue'
-      label_display: '0'
-      provider: journal_article_detail
-      context_mapping: {  }
-      region: top_right
-      weight: -3
-      uuid: 66c133eb-8897-413a-a49f-56197d807a9f
+      top_topics_link: ''
+      most_read_more_link: ''
+      most_cited_more_link: ''
+      eletter_articles_more_link: ''
+      announcements: 0
+      announcements_title: ''
+      announcements_more: ''
+      announcements_more_link: ''
+      announcements_order: '5'
+      announcements_text:
+        value: ''
+        format: full_html
     c8de770e-3b66-4406-b59a-4be97e69c32c:
       id: jnl_core_backtotop
       label: 'Back to top'
@@ -74,18 +79,6 @@ variant_settings:
       region: bottom
       weight: -2
       uuid: c8de770e-3b66-4406-b59a-4be97e69c32c
-    07e72afd-eb26-45e6-95d8-0925e3a96f77:
-      id: 'block_content:76e6b1a8-a3ef-4abf-bd86-a36aeb415946'
-      label: 'NAVIGATION: Journal of the Institute of Navigation'
-      label_display: visible
-      provider: block_content
-      status: true
-      info: ''
-      view_mode: full
-      context_mapping: {  }
-      region: bottom_left
-      weight: -3
-      uuid: 07e72afd-eb26-45e6-95d8-0925e3a96f77
     a6943f66-f7c2-4a42-a5e7-79cfee44721d:
       id: 'block_content:962ed298-cdcf-4b4c-8cca-42d60354d84d'
       label: 'For an alternate route'
@@ -108,7 +101,7 @@ variant_settings:
       view_mode: full
       context_mapping: {  }
       region: top_right
-      weight: -2
+      weight: -10
       uuid: 57b1cef7-4cc8-4846-82ec-faf8ffb343de
     d8bb07b4-b450-4928-bfb9-93d360abf442:
       id: 'views_block:latest_articles-block_1'
@@ -118,9 +111,55 @@ variant_settings:
       context_mapping: {  }
       views_label: ''
       items_per_page: '6'
+      region: bottom_left
+      weight: -4
+      uuid: d8bb07b4-b450-4928-bfb9-93d360abf442
+    fcb61f47-fa6c-4ff6-8064-114a7b15cec2:
+      id: jnl_current_issue_highlights
+      label: 'Current Issue with Highlights'
+      label_display: '0'
+      provider: journal_article_detail
+      context_mapping: {  }
       region: top_left
       weight: -10
-      uuid: d8bb07b4-b450-4928-bfb9-93d360abf442
+      uuid: fcb61f47-fa6c-4ff6-8064-114a7b15cec2
+      cover_photo: 1
+      issue_highlights: 1
+    21a1c6b9-59d5-4822-9b31-1216338dcd73:
+      id: 'block_content:f5b79222-d035-469a-bfad-46e14ed9d825'
+      label: 'Rightside footer top image block'
+      label_display: '0'
+      provider: block_content
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: bottom_right
+      weight: -3
+      uuid: 21a1c6b9-59d5-4822-9b31-1216338dcd73
+    16bbb35f-ccfe-48b9-890c-dcb3e084e50f:
+      id: 'block_content:f85053f5-da71-492d-bcf7-1a5c51006101'
+      label: 'Top image block'
+      label_display: '0'
+      provider: block_content
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: top
+      weight: 0
+      uuid: 16bbb35f-ccfe-48b9-890c-dcb3e084e50f
+    90612343-dd03-4bf9-8144-30a0b383a581:
+      id: 'views_block:homepage_featured_articles-block_1'
+      label: ''
+      label_display: '0'
+      provider: views
+      context_mapping: {  }
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 0
+      uuid: 90612343-dd03-4bf9-8144-30a0b383a581
   page_title: Homepage
   layout: bs_2col_bricked
   layout_settings:
