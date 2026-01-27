@@ -1,6 +1,6 @@
 uuid: f347d319-4f9a-4ab8-9e85-99f81ab33cd7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.content
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:content'
 settings:
   id: 'system_menu_block:content'
-  label: Content
+  label: Navigate
   label_display: visible
   provider: system
   level: 1
