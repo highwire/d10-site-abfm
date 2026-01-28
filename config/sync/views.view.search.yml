@@ -860,6 +860,7 @@ display:
           parse_mode: direct
           min_length: null
           fields:
+            - bibliography
             - hwmd_jcore_references
         date_ppub:
           id: date_ppub

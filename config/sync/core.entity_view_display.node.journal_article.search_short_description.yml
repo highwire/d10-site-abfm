@@ -137,6 +137,7 @@ dependencies:
   module:
     - highwire_markup_display
     - layout_builder
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -149,6 +150,20 @@ targetEntityType: node
 bundle: journal_article
 mode: search_short_description
 content:
+  doi:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  fpage:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   hwmd_abstract_search_index_:
     type: hwmarkup_display_formatter
     label: above
@@ -156,10 +171,24 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  issue:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  volume:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   abstract_type: true
@@ -176,6 +205,7 @@ hidden:
   atom_type: true
   authors_full_name: true
   authors_only_full_name: true
+  bluesky_share_tools: true
   bookmark: true
   bookvault_skuid: true
   ccc_permissions_link: true
@@ -200,7 +230,6 @@ hidden:
   date_received: true
   date_released: true
   date_revision: true
-  doi: true
   download_article_pdf: true
   early_release: true
   ec_role: true
@@ -211,7 +240,6 @@ hidden:
   facebook_share_tools: true
   fig_supplementary_material: true
   final_published: true
-  fpage: true
   free_to_read: true
   georef_id: true
   has_abstract: true
@@ -246,7 +274,6 @@ hidden:
   hwmd_references: true
   issn_epub: true
   issn_ppub: true
-  issue: true
   issue_id: true
   issue_is_open: true
   issue_page_range: true
@@ -255,8 +282,13 @@ hidden:
   issue_toc: true
   jnl_altmetrics: true
   jnl_focus_view: true
+  jnl_funding: true
   jnl_info_metrics_tab: true
+  jnl_info_metrics_tab_contribs: true
+  jnl_reviewer_comments_pdf: true
   jnl_usage_stats: true
+  jnl_view_full_article: true
+  jnl_view_full_resumo: true
   journal_abbrv_title: true
   journal_current_issue: true
   journal_eissn: true
@@ -271,6 +303,7 @@ hidden:
   keywords_data: true
   langcode: true
   license_info: true
+  linkedin_share_second_tools: true
   linkedin_share_tools: true
   lpage: true
   member_network: true
@@ -319,4 +352,6 @@ hidden:
   variant_table_of_contents_pdf: true
   version_current: true
   video_id: true
-  volume: true
+  view_article_abstract: true
+  view_article_link: true
+  warning_viewpoint: true

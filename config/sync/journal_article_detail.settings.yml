@@ -40,7 +40,7 @@ article_google_scholar_checkbox: 1
 article_pubmed_checkbox: 1
 article_advanced_search_checkbox: 1
 article_author_landing_checkbox: 0
-article_orchid_checkbox: 1
+article_orchid_checkbox: 0
 article_ads_search_checkbox: 0
 article_agricola_checkbox: 0
 article_correspondence_checkbox: 1
@@ -94,3 +94,25 @@ history_date_format: 'F j, Y'
 hide_empty_cited_by: 1
 label_combine: Published
 label_fpubdate: 'Published online'
+article_title_empty_author: 0
+show_text_bef_ppub: ''
+hide_https_doi: 0
+override_journal_title: ''
+show_expand_view_figures: 0
+default_publication_type: ppub
+published_date_format: ''
+volume_issue_format_toc: ''
+date_format_toc: ''
+show_comma: 0
+show_larger_cover_image: 0
+action_tool_layout_option: default
+action_tool_label: ''
+default_current_img: 0
+default_past_img: 0
+past_image: null
+check_update_crossmark_settings: 0
+crossmark_image: horizontal
+info_pubmed_label: ''
+online_issn: 1
+hide_issue_number: ''
+article_page_ppub_date_format: 'F Y,'

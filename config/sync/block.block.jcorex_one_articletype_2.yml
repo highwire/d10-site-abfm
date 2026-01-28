@@ -12,13 +12,13 @@ dependencies:
 id: jcorex_one_articletype_2
 theme: jcorex_one
 region: sidebar_second
-weight: -10
+weight: -9
 provider: null
 plugin: 'facet_block:article_type_section'
 settings:
   id: 'facet_block:article_type_section'
-  label: 'Refine Search'
-  label_display: visible
+  label: 'Article Type'
+  label_display: '0'
   provider: facets
   context_mapping: {  }
   block_id: jcorex_one_articletype_2

@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: cqPQk-pi1yA7-hI8qOjXZ2FgIVGPTAdimLMao_k-AOQ
 id: resources
-label: Resources
+label: 'Other Services'
 description: ''
 locked: false

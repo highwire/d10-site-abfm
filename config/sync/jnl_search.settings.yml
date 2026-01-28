@@ -16,5 +16,7 @@ access_flag: 1
 items_per_page: 1
 sort: 1
 format_result: 1
-exclude_meeting: 0
-content_type: 1
+exclude_meeting: 1
+content_type: 0
+journal: 0
+collection_code: 0

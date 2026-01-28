@@ -12,13 +12,13 @@ dependencies:
 id: jcorex_one_year
 theme: jcorex_one
 region: sidebar_second
-weight: -9
+weight: -10
 provider: null
 plugin: 'facet_block:year'
 settings:
   id: 'facet_block:year'
-  label: 'Publication date'
-  label_display: '0'
+  label: 'Refine Search'
+  label_display: visible
   provider: facets
   context_mapping: {  }
   block_id: jcorex_one_year

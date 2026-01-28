@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: oVcGv7HUYRM9tvparfGPbwQi6RLQu3p5QmEFbNe6MJI
 id: information
-label: Information
+label: 'Authors & Reviewers'
 description: ''
 locked: false
