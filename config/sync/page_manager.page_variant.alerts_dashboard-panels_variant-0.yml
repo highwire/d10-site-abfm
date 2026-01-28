@@ -4,7 +4,11 @@ status: true
 dependencies:
   config:
     - page_manager.page.alerts_dashboard
+  content:
+    - 'block_content:basic:36b84f66-ee39-40db-a136-d1464bb99a22'
+    - 'block_content:basic:753974b9-9e4e-4127-99fc-2d63da634221'
   module:
+    - block_content
     - highwire_alerts
     - panels
 _core:
@@ -35,7 +39,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: -4
+      weight: -5
       uuid: bc874be3-9328-4efa-9357-4d8de16b4cb4
       html_content:
         value: '<h2>My Alerts</h2><p>Manage individual alerts for <strong>%highwire_alerts_user:user_email</strong> by clicking on the individual Alert Criteria in the table below.</p>'
@@ -49,7 +53,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: 0
+      weight: -1
       uuid: 89d595fe-53b7-4aca-ad9a-46256c6a9aed
       html_content:
         value: '<h2 class="pane-title" style="-webkit-text-stroke-width:0px;color:rgb(51, 51, 51);font-family:sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:normal;letter-spacing:normal;line-height:1.2;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">My Alert Preferences</h2>'
@@ -63,7 +67,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: 1
+      weight: 0
       uuid: 59d4e6cb-21f4-4824-833f-f0c5ffea11b8
       html_content:
         value: '<div class="item-list-alerts"><ul><li class="first">Alerts are sent when new results are found.</li><li>Alerts are sent in HTML format.</li><li>URLs are formatted for Australia, Brazil, China, France, Germany, Hong Kong, Ireland, Israel, Italy, Japan, Mexico, Russia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, The Netherlands, UK</li></ul></div>'
@@ -77,7 +81,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: -1
+      weight: -2
       uuid: 779d8a3e-94a9-4196-87ba-b8485bfed2bf
       show_etoc_link: 1
       label_create_etoc_header: /alerts/toc/edit
@@ -87,14 +91,14 @@ variant_settings:
       create_collections_alert: /alerts/collection/add
       label_collections_alert_link: 'Add a new Collection Alert'
       label_collections_header: 'Collections Alerts'
-      create_show_etoc_alert: ''
-      label_show_etoc_header: ''
-      label_show_etoc_alert_link: ''
-      show_blog_link: 0
-      label_news_alert_link: ''
-      label_news_header: ''
-      create_news_alert: ''
-      show_news_link: 0
+      create_show_etoc_alert: '/alerts/blog/edit?destination=alerts'
+      label_show_etoc_header: 'Add a Blog Alert'
+      label_show_etoc_alert_link: 'Add a Blog Alert'
+      show_blog_link: 1
+      label_news_alert_link: 'Add a new News Alert'
+      label_news_header: 'Add a new News Alert'
+      create_news_alert: '/alerts/news/edit?destination=alerts'
+      show_news_link: 1
       label_search_alert_link: 'Add a new Keyword/Author Alert'
       label_search_header: 'Authors/Keyword Alerts'
       create_search_alert: /alerts/search/add
@@ -114,7 +118,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: 2
+      weight: 1
       uuid: d280086c-9a58-4aa8-a8aa-5786c5a228a3
       show_perferences_link: 1
       link_email_address: /help/email-alert-change-email
@@ -131,7 +135,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: -3
+      weight: -4
       uuid: 8615fea4-0543-499f-9b97-b245277d9929
       site_code_user_alert: ''
       correction_user_alert: 1
@@ -141,8 +145,8 @@ variant_settings:
       cme_user_alert: 0
       key_auth_user_alert: 1
       collection_user_alert: 1
-      news_user_alert: 0
-      blog_user_alert: 0
+      news_user_alert: 1
+      blog_user_alert: 1
       alert_keyword_label: null
       add_user_alert_fieldset:
         alert_keyword_label: 'Keyword/Author Alerts'
@@ -161,7 +165,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: -2
+      weight: -3
       uuid: 6dc0194a-bb16-40e0-91f9-ffff3f924ad7
       html_content:
         value: '<h2>Add New Alerts</h2><p>Subscribe to new alerts by clicking on the links below.</p>'
@@ -175,7 +179,7 @@ variant_settings:
       provider: highwire_alerts
       context_mapping: {  }
       region: left
-      weight: 3
+      weight: 2
       uuid: 8e81761b-ca28-4693-95bd-bbef3c6472d3
     43928fa4-25a6-4835-957c-d12d5facf27d:
       id: hw_alert_msg
@@ -186,6 +190,44 @@ variant_settings:
       region: top
       weight: -4
       uuid: 43928fa4-25a6-4835-957c-d12d5facf27d
+    e9751590-f12e-466e-81b3-6f61d3323275:
+      id: 'block_content:753974b9-9e4e-4127-99fc-2d63da634221'
+      label: 'alert page custom text top'
+      label_display: '0'
+      provider: block_content
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: top
+      weight: 0
+      uuid: e9751590-f12e-466e-81b3-6f61d3323275
+    99fd84bc-aff2-4434-acfc-f027fee1a962:
+      id: 'block_content:36b84f66-ee39-40db-a136-d1464bb99a22'
+      label: 'alert right side'
+      label_display: '0'
+      provider: block_content
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: right
+      weight: 0
+      uuid: 99fd84bc-aff2-4434-acfc-f027fee1a962
+    8607ac55-1075-4b2a-9303-2f3c99bbe12d:
+      id: custom_html_block
+      label: 'my alert left side'
+      label_display: '0'
+      provider: highwire_alerts
+      context_mapping: {  }
+      region: left
+      weight: -6
+      uuid: 8607ac55-1075-4b2a-9303-2f3c99bbe12d
+      html_content:
+        value: '<div class="panel-pane pane-custom pane-1"><h2 class="pane-title">My Alerts</h2><div class="pane-content"><p>Manage individual alerts for by clicking on the individual Alert Criteria in the table below.</p></div></div><div class="panel-separator">&nbsp;</div><div class="panel-pane pane-custom pane-2"><h2 class="pane-title">Add New Alerts</h2><div class="pane-content"><p>Subscribe to new alerts by clicking on the links below.</p></div></div>'
+        format: full_html
+      auth_user: 0
+      unauth_user: 1
   page_title: 'My Alert Summary & Preferences'
   layout: bs_2col_stacked
   layout_settings:

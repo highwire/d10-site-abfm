@@ -76,21 +76,33 @@ variant_settings:
       top_topics_title: ''
       most_read: 1
       most_read_title: ''
-      most_cited: 0
+      most_cited: 1
       most_cited_title: ''
       eletter_articles: 0
       eletter_articles_title: ''
       limit: '5'
-      corpus: navi
+      corpus: jabfp
       read_more: 1
-      most_cited_more: ''
+      most_cited_more: More...
       top_topics_more: ''
-      most_read_more: ''
+      most_read_more: More...
       eletter_articles_more: ''
       top_topics_order: '1'
-      most_read_order: '2'
-      most_cited_order: '3'
+      most_read_order: '3'
+      most_cited_order: '2'
       eletter_articles_order: '4'
+      top_topics_link: ''
+      most_read_more_link: ''
+      most_cited_more_link: ''
+      eletter_articles_more_link: ''
+      announcements: 0
+      announcements_title: ''
+      announcements_more: ''
+      announcements_more_link: ''
+      announcements_order: '5'
+      announcements_text:
+        value: ''
+        format: full_html
     b3625934-919f-4d8e-8213-a1384dd8108c:
       id: page_title_block
       label: 'Page title'
