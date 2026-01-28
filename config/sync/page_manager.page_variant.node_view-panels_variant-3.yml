@@ -5,7 +5,7 @@ dependencies:
   config:
     - page_manager.page.node_view
   content:
-    - 'block_content:basic:7f4b9182-0dc3-49e5-b7cf-99c77573124b'
+    - 'block_content:basic:4e3978df-755a-421b-b7fa-8d3e5772b5d1'
   module:
     - block_content
     - ctools
@@ -51,21 +51,33 @@ variant_settings:
       top_topics_title: ''
       most_read: 1
       most_read_title: ''
-      most_cited: 0
+      most_cited: 1
       most_cited_title: ''
       eletter_articles: 0
       eletter_articles_title: ''
       limit: '5'
-      corpus: navi
+      corpus: jabfp
       read_more: 1
       top_topics_order: '1'
-      most_read_order: '2'
-      most_cited_order: '3'
+      most_read_order: '3'
+      most_cited_order: '2'
       eletter_articles_order: '4'
-      most_cited_more: ''
+      most_cited_more: More...
       top_topics_more: ''
-      most_read_more: ''
+      most_read_more: More...
       eletter_articles_more: ''
+      top_topics_link: ''
+      most_read_more_link: ''
+      most_cited_more_link: ''
+      eletter_articles_more_link: ''
+      announcements: 0
+      announcements_title: ''
+      announcements_more: ''
+      announcements_more_link: ''
+      announcements_order: '5'
+      announcements_text:
+        value: ''
+        format: full_html
     bb076ee8-45f5-434c-9865-82c80445e220:
       id: jnl_current_issue
       label: 'In this Issue'
@@ -111,18 +123,6 @@ variant_settings:
       region: right
       weight: -2
       uuid: a35a5255-40c8-4f73-8206-e2283aa78c2a
-    b2c42857-fb7d-4d99-b18f-62c7e0440bed:
-      id: 'block_content:7f4b9182-0dc3-49e5-b7cf-99c77573124b'
-      label: 'ion TOC Page Ad'
-      label_display: '0'
-      provider: block_content
-      status: true
-      info: ''
-      view_mode: full
-      context_mapping: {  }
-      region: right
-      weight: 0
-      uuid: b2c42857-fb7d-4d99-b18f-62c7e0440bed
     c01f57f9-bcc3-4d83-8610-dd23776fcdc5:
       id: 'entity_view:node'
       label: 'Entity view (Content)'
@@ -134,6 +134,18 @@ variant_settings:
       region: top
       weight: -10
       uuid: c01f57f9-bcc3-4d83-8610-dd23776fcdc5
+    11f75d57-4db3-4fd1-b850-01260d2fa521:
+      id: 'block_content:4e3978df-755a-421b-b7fa-8d3e5772b5d1'
+      label: 'Toc right side snippet'
+      label_display: '0'
+      provider: block_content
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: right
+      weight: 0
+      uuid: 11f75d57-4db3-4fd1-b850-01260d2fa521
   page_title: '[node:journal_title] [node:title]'
   layout: bs_2col_stacked
   layout_settings:

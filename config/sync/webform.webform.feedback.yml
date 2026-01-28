@@ -15,7 +15,7 @@ categories: {  }
 elements: |-
   name:
     '#type': textfield
-    '#title': Name
+    '#title': 'Name <span class="form-required" title="This field is required.">*</span>'
     '#title_display': inline
     '#autocomplete': 'off'
     '#required': true
@@ -24,7 +24,7 @@ elements: |-
     '#default_value': '[current-user:display-name]'
   email_address:
     '#type': textfield
-    '#title': 'Email address'
+    '#title': 'Email address <span style="color: red;"  class="form-required" title="This field is required.">*</span>'
     '#title_display': inline
     '#size': 70
     '#required': true
@@ -33,7 +33,7 @@ elements: |-
     '#default_value': '[current-user:mail]'
   subject:
     '#type': textfield
-    '#title': Subject
+    '#title': 'Subject <span class="form-required" title="This field is required.">*</span>'
     '#title_display': inline
     '#size': 200
     '#required': true
@@ -46,18 +46,22 @@ elements: |-
       'Comments on the content of the site': 'Comments on the content of the site'
       'Subscription problem or question': 'Subscription problem or question'
       'Website comment or suggestion': 'Website comment or suggestion'
-      'Questions about missing abstract views in the back content': 'Questions about missing abstract views in the back content'
+      'Change of mailing address': 'Change of mailing address'
       'None of the above': 'None of the above'
     '#default_value': 'Comments on the content of the site'
+    '#wrapper_type': form_element
+    '#wrapper_attributes':
+      class:
+        - help-message
   message:
     '#type': textarea
-    '#title': Message
+    '#title': 'Message <span class="form-required" title="This field is required.">*</span>'
     '#title_display': before
     '#rows': 4
     '#autocomplete': 'off'
   i_grant_the_isa_permission_to_reprint_my_comments_for_promotiona:
     '#type': radios
-    '#title': 'I grant the ISA permission to reprint my comments for promotional purposes'
+    '#title': 'I grant the abfm permission to reprint my comments for promotional purposes'
     '#title_display': before
     '#options':
       'Yes': 'Yes'
@@ -65,7 +69,11 @@ elements: |-
     '#default_value': 'Yes'
   ip_address:
     '#type': webform_markup
-    '#markup': '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);display:inline !important;float:none;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Your IP address is<strong> </strong></span><a style="-webkit-text-stroke-width:0px;background-color:rgb(245, 248, 255);color:var(--color-link-hover);font-family:BlinkMacSystemFont, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:13.6px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;outline:0px;text-align:left;text-decoration:none;text-indent:0px;text-transform:none;white-space:nowrap;widows:2;word-spacing:0px;" href="javascript:void(0);" title="Insert this token into your form"><strong>[current-user:ip-address]</strong></a></p>'
+    '#markup': '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);display:inline !important;float:none;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:14px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Your IP address is<strong>&nbsp;</strong></span></p>'
+  captcha:
+    '#type': captcha
+    '#captcha_type': recaptcha/reCAPTCHA
+    '#captcha_admin_mode': true
 css: ''
 javascript: ''
 settings:
@@ -173,10 +181,10 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<h1 class="title" style="-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border:0px;color:rgb(19, 19, 19);font:2.14em / 1.2em Georgia, &quot;Times New Roman&quot;, serif;letter-spacing:-0.03em;margin:0px 0px 20px;orphans:2;outline:0px;padding:0px;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;" id="page-title">Feedback</h1><div class="block block-system block-main block-system-main odd block-without-title" style="-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border:0px;color:rgb(0, 0, 0);font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-language-override:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-size:14px;font-stretch:inherit;font-style:normal;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-emoji:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:400;letter-spacing:normal;line-height:inherit;margin:0px;orphans:2;outline:0px;padding:0px;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;" id="block-system-main"><div class="block-inner clearfix" style="-webkit-font-smoothing:antialiased;border:0px;font:inherit;margin:0px;outline:0px;padding:0px;vertical-align:baseline;zoom:1;"><div class="content clearfix" style="-webkit-font-smoothing:antialiased;border:0px;font:inherit;margin:0px;outline:0px;padding:0px;vertical-align:baseline;zoom:1;"><div class="webform-confirmation" style="-webkit-font-smoothing:antialiased;border:0px;font:inherit;margin:0px;outline:0px;padding:0px;vertical-align:baseline;"><p style="-webkit-font-smoothing:antialiased;border:0px;font:inherit;margin:0px 0px 15px;outline:0px;padding:0px;vertical-align:baseline;">Thank you, your submission has been received.</p></div></div></div></div>'
   confirmation_attributes: {  }
   confirmation_back: true
-  confirmation_back_label: ''
+  confirmation_back_label: 'Go back to the form'
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
   confirmation_exclude_token: false

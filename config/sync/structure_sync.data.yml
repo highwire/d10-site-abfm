@@ -2,6 +2,62 @@ _core:
   default_config_hash: 12cUBEGixXIGW6ewF97eTBAIpi-OmivzUDPk8Ie3-is
 blocks:
   -
+    info: 'alert right side'
+    langcode: en
+    uuid: 36b84f66-ee39-40db-a136-d1464bb99a22
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<p><strong>ALERT: </strong><a href="http://www.jabfm.org/content/35/6/1042"><u>WELCOME FAMILY MEDICINE RESIDENTS</u></a></p>'
+          summary: ''
+          format: full_html
+      field_block_title: {  }
+  -
+    info: 'my alert left side'
+    langcode: en
+    uuid: 5fbd90d9-8cbc-417b-811a-1e65aaf111d6
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<div class="panel-pane pane-custom pane-1"><h2 class="pane-title">My Alerts</h2><div class="pane-content"><p>Manage individual alerts for by clicking on the individual Alert Criteria in the table below.</p></div></div><div class="panel-separator">&nbsp;</div><div class="panel-pane pane-custom pane-2"><h2 class="pane-title">Add New Alerts</h2><div class="pane-content"><p>Subscribe to new alerts by clicking on the links below.</p></div></div>'
+          summary: ''
+          format: full_html
+      field_block_title: {  }
+  -
+    info: 'alert page custom text top'
+    langcode: en
+    uuid: 753974b9-9e4e-4127-99fc-2d63da634221
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<div class="panel-row-wrapper panel-row-first clearfix"><div class="top-wrapper"><div class="panel-panel panel-region-top"><div class="inside"><div class="panel-pane pane-snippet pane-jnl-abfm-alerts-page-title-snippet"><div class="pane-content"><div class="snippet jnl-abfm-alerts-page-title-snippet" id="jnl-abfm-alerts-page-title-snippet"><div class="snippet-content"><p>To be removed from any or all <em>JABFM</em> email alerts, please log-in using your registered email and uncheck any alerts that you no longer wish to receive. A password is not required. Please be sure to save your changes. If you would like us to remove your email address manually, please <a href="mailto:jabfm@med.wayne.edu?subject=Please%20remove%20my%20email%20from%20JABFM%20alerts.&amp;body=My%20email%20address%20is%3A%20">click here</a>, and we will do so in the next cycle.&nbsp;</p></div></div></div></div></div></div></div></div>'
+          summary: ''
+          format: full_html
+      field_block_title: {  }
+  -
+    info: 'Toc right side snippet'
+    langcode: en
+    uuid: 4e3978df-755a-421b-b7fa-8d3e5772b5d1
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(46, 43, 43);display:inline !important;float:none;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13.02px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">The </span><em style="-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border:0px;color:rgb(46, 43, 43);font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-language-override:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-size:13.02px;font-stretch:inherit;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-emoji:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:400;letter-spacing:normal;line-height:inherit;margin:0px;orphans:2;outline:0px;padding:0px;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">JABFM</em><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(46, 43, 43);display:inline !important;float:none;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13.02px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"> now subscribes to a continous publishing model. The current issue will be updated as articles become available.&nbsp;</span></p>'
+          summary: ''
+          format: full_html
+      field_block_title: {  }
+  -
     info: 'Top image block'
     langcode: en
     uuid: f85053f5-da71-492d-bcf7-1a5c51006101
@@ -39,7 +95,7 @@ blocks:
     fields:
       body:
         -
-          value: '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(51, 51, 51);display:inline !important;float:none;font-family:sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;font-size:13px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Metrics shown below are collected from this platform only.</span></p>'
+          value: '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(46, 43, 43);display:inline !important;float:none;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13.02px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">The </span><em style="-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);border:0px;color:rgb(46, 43, 43);font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-feature-settings:inherit;font-kerning:inherit;font-language-override:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-size:13.02px;font-stretch:inherit;font-variant-alternates:inherit;font-variant-caps:normal;font-variant-east-asian:inherit;font-variant-emoji:inherit;font-variant-ligatures:normal;font-variant-numeric:inherit;font-variant-position:inherit;font-variation-settings:inherit;font-weight:400;letter-spacing:normal;line-height:inherit;margin:0px;orphans:2;outline:0px;padding:0px;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;vertical-align:baseline;white-space:normal;widows:2;word-spacing:0px;">JABFM</em><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(46, 43, 43);display:inline !important;float:none;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13.02px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"> now subscribes to a continous publishing model. The current issue will be updated as articles become available.&nbsp;</span></p>'
           summary: ''
           format: full_html
       field_block_title: {  }

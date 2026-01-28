@@ -14,12 +14,13 @@ configuration:
       processor_config:
         config:
           selector_type: xpath
-          xpath: '//h3[contains(@class, "item-list__title")]'
+          xpath: '//h2[contains(@class, "item-list__title")]'
           css: ''
     weight: '1'
+  view_mode_for_adjunct: toc_list
+  view_mode_for_advanced_page: toc_list
   view_mode_for_article: toc_list
   view_mode_for_banner: toc_list
-  view_mode_for_eletters: toc_list
   view_mode_for_journal: toc_list
   view_mode_for_journal_article: toc_list
   view_mode_for_journal_fragment: toc_list
@@ -30,6 +31,7 @@ configuration:
   view_mode_for_page: toc_list
   view_mode_for_relationship: toc_list
   view_mode_for_society: toc_list
+  view_mode_for_webform: toc_list
   toc_wrapper_class: ''
   toc_section_class: ''
   display_flat_toc: 0

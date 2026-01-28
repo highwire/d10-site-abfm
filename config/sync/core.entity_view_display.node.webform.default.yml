@@ -32,13 +32,17 @@ content:
   webform:
     type: webform_entity_reference_entity_view
     label: hidden
-    settings: {  }
+    settings:
+      source_entity: true
+      lazy: false
     third_party_settings: {  }
     weight: 102
     region: content
 hidden:
   addtoany: true
   jnl_focus_view: true
+  jnl_view_full_article: true
+  jnl_view_full_resumo: true
   langcode: true
   prev_next_pager: true
   prevnext_toc_pager: true

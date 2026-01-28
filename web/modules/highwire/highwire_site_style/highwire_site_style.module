@@ -1,1 +1,224 @@
 <?php
+
+use Drupal\node\Entity\Node;
+use Drupal\Core\Url;
+/**
+ * @file
+ * Core JNL Site module
+ */
+
+/**
+ * Implements hook for Menu Preprocess.
+ */
+
+function highwire_site_style_preprocess_menu(array &$variables)
+{
+    $current_path = \Drupal::service("path.current")->getPath();
+    $current_alias = \Drupal::service("path_alias.manager")->getAliasByPath(
+        $current_path
+    );
+
+    if ($variables["menu_name"] == "main") {
+        if (
+            preg_match("/^\/content\/by\/year\/\d+/", $current_alias) ||
+            preg_match("/^\/content\/by\/volume\/\d+/", $current_alias)
+        ) {
+            // Add class for "All Issues"
+            foreach ($variables["items"] as $item) {
+                foreach ($item["below"] as $itemchildmenu) {
+                    $menu_item_url = $itemchildmenu["url"]->toString();
+                    // Check if the item is the "Current Issue" menu item
+                    if (
+                        isset($menu_item_url) &&
+                        $menu_item_url == "/content/by/year"
+                    ) {
+                        // Add an extra class to the menu item
+                        $itemchildmenu["url"]->setOption("attributes", [
+                            "class" => ["is-active"], // Add your custom class here.
+                        ]);
+                        $item["attributes"]["class"] = "active";
+                    }
+                }
+            }
+        } else {
+            $node = \Drupal::routeMatch()->getParameter("node");
+            $nid = "";
+            $type = "";
+            // Determine the node ID based on the current route
+            if ($node instanceof \Drupal\node\NodeInterface) {
+                $nid = $node->id();
+                $type = $node->bundle();
+            }
+
+            $site_data = \Drupal::config("highwire_content.site_data")->get(
+                "highwire_content_site_data"
+            );
+            $corpus = array_key_first($site_data);
+
+            $apath_uppercase = strtoupper("/" . $corpus . ".atom");
+            $apath_lowercase = strtolower("/" . $corpus . ".atom");
+
+            $db = \Drupal::database();
+
+            // Query for nodes matching the atom path
+            $query = $db
+                ->select("node__apath", "n")
+                ->fields("n", ["entity_id"]) // Select the 'entity_id' field.
+                ->condition(
+                    "n.apath_value",
+                    [$apath_uppercase, $apath_lowercase],
+                    "IN"
+                ) // Use 'IN' for multiple values.
+                ->execute();
+
+            $nids = $query->fetchField();
+            $node_data = null;
+            $journal_current_issue_id = "";
+            
+            // Check if we found a node ID and try to load the node
+            if ($nids) {
+                $node_data = Node::load($nids);
+                
+                // Only try to get the field value if the node loaded successfully
+                if ($node_data && $node_data->hasField('journal_current_issue')) {
+                    $current_issue_field = $node_data->get("journal_current_issue");
+                    if (!$current_issue_field->isEmpty()) {
+                        $journal_current_issue_id = $current_issue_field->target_id;
+                    }
+                }
+            }
+
+            if (!empty($node) && $type == "journal_issue") {
+                // Journal Issue
+                foreach ($variables["items"] as $item) {
+                    foreach ($item["below"] as $itemchildmenu) {
+                        $menu_item_url = $itemchildmenu["url"]->toString();
+                        if ($nid == $journal_current_issue_id) {
+                            if (
+                                isset($menu_item_url) &&
+                                $menu_item_url == "/content/current"
+                            ) {
+                                // Add an extra class to the menu item
+                                $itemchildmenu["url"]->setOption("attributes", [
+                                    "class" => ["is-active"], // Add your custom class here.
+                                ]);
+                                $item["attributes"]["class"] = "active";
+                            }
+                        } else {
+                            // Check if the item is the "Current Issue" menu item
+                            if (
+                                isset($menu_item_url) &&
+                                $menu_item_url == "/content/by/year"
+                            ) {
+                                // Add an extra class to the menu item
+                                $itemchildmenu["url"]->setOption("attributes", [
+                                    "class" => ["is-active"], // Add your custom class here.
+                                ]);
+                                $item["attributes"]["class"] = "active";
+                            }
+                        }
+                    }
+                }
+            } else {
+                $arg = !empty($current_alias)
+                    ? explode("/", trim($current_alias, "/"))
+                    : [];
+                $content = $arg[0] ?? null;
+                $fpage = $arg[3] ?? null;
+                $issue = $arg[2] ?? null;
+                $volume = $arg[1] ?? null;
+
+                $upper_page = strtoupper($fpage);
+                $lower_page = strtolower($fpage);
+            }
+            if (
+                $content == "content" &&
+                !empty($fpage) &&
+                !empty($issue) &&
+                !empty($volume)
+            ) {
+                // Query for nodes matching the journal code, volume, and page.
+                $query1 = \Drupal::entityTypeManager()
+                    ->getStorage("node")
+                    ->getQuery()
+                    ->accessCheck(false)
+                    ->condition("volume", $volume)
+                    ->condition("issue", $issue)
+                    ->condition("type", "journal_article")
+                    ->condition("atom-type", "journal-article");
+
+                // Add condition to check both uppercase and lowercase.
+                $group1 = $query1
+                    ->orConditionGroup()
+                    ->condition("slug", $upper_page)
+                    ->condition("slug", $lower_page);
+
+                $query1->condition($group1);
+                $result = $query1->execute();
+
+                if (empty($result)) {
+                    $query2 = \Drupal::entityTypeManager()
+                        ->getStorage("node")
+                        ->getQuery()
+                        ->accessCheck(false)
+                        ->condition("volume", $volume)
+                        ->condition("issue", $issue)
+                        ->condition("type", "journal_article")
+                        ->condition("atom-type", "journal-article");
+
+                    // Add condition to check both uppercase and lowercase.
+                    $group2 = $query2
+                        ->orConditionGroup()
+                        ->condition("fpage", $upper_page)
+                        ->condition("fpage", $lower_page);
+
+                    $query2->condition($group2);
+                    $result = $query2->execute();
+                }
+
+                $article_nid = reset($result);
+            }
+            if (!empty($article_nid)) {
+                $article_node_data = Node::load($article_nid);
+                $journal_parent_issue_id = $article_node_data->get(
+                    "parent_issue"
+                )->target_id;
+                foreach ($variables["items"] as $item) {
+                    foreach ($item["below"] as $itemchildmenu) {
+                        $menu_item_url = $itemchildmenu["url"]->toString();
+
+                        if (
+                            $journal_parent_issue_id ==
+                            $journal_current_issue_id
+                        ) {
+                            // Check if the item is the "Current Issue" menu item
+                            if (
+                                isset($menu_item_url) &&
+                                $menu_item_url == "/content/current"
+                            ) {
+                                // Add an extra class to the menu item
+                                $itemchildmenu["url"]->setOption("attributes", [
+                                    "class" => ["is-active"], // Add your custom class here.
+                                ]);
+                                $item["attributes"]["class"] = "active";
+                            }
+                        } else {
+                            // Check if the item is the "Current Issue" menu item
+                            if (
+                                isset($menu_item_url) &&
+                                $menu_item_url == "/content/by/year"
+                            ) {
+                                // Add an extra class to the menu item
+                                $itemchildmenu["url"]->setOption("attributes", [
+                                    "class" => ["is-active"], // Add your custom class here.
+                                ]);
+                                $item["attributes"]["class"] = "active";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        $variables["#cache"]["max-age"] = 0;
+    }
+}
